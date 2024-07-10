@@ -1,4 +1,11 @@
-window.addEventListener("scroll", function() {
-    let header = document.querySelector('.cabecalho')
-    header.classList.toggle('scrolled',window.scrollY > 0)
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+
+    const body = document.body;
+    
+    if (scrollPosition > 0) {
+        body.classList.add('scrolled');
+    } else {
+        body.classList.remove('scrolled');
+    }
 });
