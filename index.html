@@ -12,10 +12,12 @@
 </head><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <body>
     <! --- CABEÇALHO --- !>
-    <header class="cabecalho">
-        <div class="flexCabecalho">
+    <header class="form-header">
+        <div class="flex-header">
             <h1>FluAgenda</h1>
-            <h2 class="botaoEntrar">Entrar</h2>
+            <a href="https://fluagenda-frontend-0908309dd70e.herokuapp.com/auth/login">
+                <button class="btn-enter">Entrar</button>
+            </a>
         </div>
     </header>
     <main>
@@ -27,38 +29,65 @@
         <! --- OTIMIZE SUA ROTINA --- !>
         <div>
             <h3>
-                Otimize sua <span class="formUnderline">Rotina</span> e 
+                Otimize sua <span class="form-underline">Rotina</span> e 
                 <br>  
-                <span class="formUnderline">Economize Tempo</span> com o 
+                <span class="form-underline">Economize Tempo</span> com o 
                 <br>
-                <span class="formColorFluagenda">FluAgenda</span>
+                <span class="color-logo">FluAgenda</span>
             </h3>
         </div>
         <! --- TESTE GRATUITO --- !>
-        <div class="flexMain"> 
-            <div class="formDivgeral">
+        <div class="flex-free-test"> 
+            <div class="form-free-test">
                 <label>
                     Inicie seu teste gratuitamente
                 </label>
-                <div class="formDivinputbtn">
+                <div class="form-input-btn">
                     <input type="text" placeholder="Ex: exemplo@email.com" "input:focus">
-                    <button class="botaoCadastrar">Cadastrar</button>
+                    <button class="btn-register">Cadastrar</button>
                 </div>
             </div>
         </div>
         <! --- SOLUÇÕES --- !>
-        <div class="formSolucoes">
-            <h4> SOLUÇÕES </h4>
-            <h4> Nossas principais funcionalidades</h4>
+        <div class="flex-solutions">
+            <h4 class="txt-solutions"> SOLUÇÕES </h4>
+            <h3 class="txt-functionalities"> Nossas principais funcionalidades</h3>
             <p>
                 Transforme sua rotina com nossos serviços e ferramentas avançadas. <br>
                 Estamos em constante evolução para garantir a você a melhor experiência possível.
             </p>
+            <div class="form-grid"> 
+                <div class="items-grid">
+                    <img src = "images/pdf.png" height="85px" width="85px">
+                    <span class="txt-grid">Faturas detalhadas</span>
+                </div>
+                <div class="items-grid">
+                    <img src = "images/cadastro.png" height="85px" width="85px">
+                    <span class="txt-grid">Cadastro de pacientes</span>
+                </div>
+                <div class="items-grid">
+                    <img src = "images/clinica.png" height="85px" width="85px">
+                    <span class="txt-grid">Cadastro de clínicas</span>
+                </div>
+                <div class="items-grid">
+                    <div><img src = "images/agenda.png" height="85px" width="85px"></div>
+                    <span class="txt-grid">Criar agenda do paciente</span>
+                </div>
+                <div class="items-grid">
+                    <div>
+                        <div><img src = "images/prontuario.png" height="85px" width="85px"></div>
+                    </div>
+                    <div><span class="txt-grid">Prontuário</span></div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
         
     </footer>
-    <script src="assets/js/scripts.js"></script>
+    <div class="btn-whats">
+        <img src = "images/whats.png" height="50px" width="50px">
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
