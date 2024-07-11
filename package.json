@@ -1,0 +1,25 @@
+{
+  "name": "fluagenda-site",
+  "version": "1.0.0",
+  "description": "site of fluagenda",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FluwayTecnologia/fluagenda-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FluwayTecnologia/fluagenda-site/issues"
+  },
+  "homepage": "https://github.com/FluwayTecnologia/fluagenda-site#readme"
+}
