@@ -43,7 +43,7 @@
                     Inicie seu teste gratuitamente
                 </label>
                 <div class="form-input-btn">
-                    <input type="text" placeholder="Ex: exemplo@email.com" "input:focus">
+                    <input type="text" class="input-register" placeholder="Ex: exemplo@email.com">
                     <button class="btn-register">Cadastrar</button>
                 </div>
             </div>
@@ -56,26 +56,252 @@
                 Transforme sua rotina com nossos serviços e ferramentas avançadas. <br>
                 Estamos em constante evolução para garantir a você a melhor experiência possível.
             </p>
-            <div class="form-grid"> 
-                <div class="items-grid">
+            <div class="grid-solutions"> 
+                <div class="solutions-items-grid">
                     <img src = "images/pdf.png" height="85px" width="85px">
                     <span class="txt-grid">Faturas detalhadas</span>
                 </div>
-                <div class="items-grid">
+                <div class="solutions-items-grid">
                     <img src = "images/cadastro.png" height="85px" width="85px">
                     <span class="txt-grid">Cadastro de pacientes</span>
                 </div>
-                <div class="items-grid">
+                <div class="solutions-items-grid">
                     <img src = "images/clinica.png" height="85px" width="85px">
                     <span class="txt-grid">Cadastro de clínicas</span>
                 </div>
-                <div class="items-grid">
+                <div class="solutions-items-grid">
                     <img src = "images/agenda.png" height="85px" width="85px">
                     <span class="txt-grid">Criar agenda do paciente</span>
                 </div>
-                <div class="items-grid">
+                <div class="solutions-items-grid">
                     <img src = "images/prontuario.png" height="85px" width="85px">
                     <span class="txt-grid">Prontuário</span>
+                </div>
+            </div>
+        </div>
+        <! --- PLANOS --- !>
+        <div class="flex-plans">
+            <div class="padding-plans">
+                <p class="txt-plans">Inicie seu período de teste</p>
+                <p>Experimente sem compromisso por 7 dias</p>
+            </div>
+            <div class="grid-plans">
+                <div>
+                    <div class="flex-input">
+                        <input type="radio" id="basic1" name="radio_custom" class="input-plans" checked>
+                        <div class="plan-items-grid">
+                            <div>
+                                <img src = "images/logo-plans-default.png" height="80px" width="80px" class="plan-logo">
+                                <p class="form-li-options">Básico I</p>
+                                    <div class="flex-li"> 
+                                        <ul class="list">
+                                            <li class="list-check">
+                                                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M5 11L10 16L18 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                30 dias de acesso
+                                            </li>
+                                            <li class="list-check">                                                
+                                                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M5 11L10 16L18 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                Pacientes ilimitados
+                                            </li>
+                                            <li class="list-check">
+                                                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M5 11L10 16L18 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                Clínicas ilimitadas
+                                            </li>
+                                            <li class="list-check">
+                                                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M5 11L10 16L18 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                Suporte 24 horas
+                                            </li>
+                                            <li class="list-check">
+                                                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M5 11L10 16L18 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                Segurança de ponta a ponta
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="plans-price">
+                                        <span class="price">R$ 39,90</span>
+                                        <span class="plans"> /por mês</span>
+                                    </div>
+                                    <div class="flex-check-box">
+                                        <svg class="check-box" height="23" width="23" xmlns="http://www.w3.org/2000/svg">
+                                            <rect xmlns="http://www.w3.org/2000/svg" x="3" y="3" width="18" height="18" rx="4" 
+                                            stroke="#1C5D99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path xmlns="http://www.w3.org/2000/svg" d="M9 12L11.25 14L15 10" stroke="#1C5D99" 
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex-input">
+                        <input type="radio" id="basic2" name="radio_custom" class="input-plans">
+                        <div class="plan-items-grid">
+                            <div>
+                                <img src = "images/logo-plans-default.png" height="80px" width="80px" class="plan-logo">
+                                <p class="form-li-options">Básico II</p>
+                                    <div class="flex-li">
+                                        <ul class="list">
+                                            <li class="list-check">
+                                                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M5 11L10 16L18 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                Todos do plano básico I
+                                            </li>
+                                            <li class="list-check">
+                                                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M5 11L10 16L18 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                6 meses de acesso
+                                            </li>
+                                            <li class="list-check">
+                                                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M5 11L10 16L18 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                5% de desconto
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="plans-price">
+                                        <span class="price">R$ 227,43</span>
+                                        <span class="plans"> /a cada 6 meses</span>
+                                    </div>
+                                    <div class="flex-check-box">
+                                        <svg class="check-box" height="23" width="23" xmlns="http://www.w3.org/2000/svg">
+                                            <rect xmlns="http://www.w3.org/2000/svg" x="3" y="3" width="18" height="18" rx="4" 
+                                            stroke="#1C5D99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path xmlns="http://www.w3.org/2000/svg" d="M9 12L11.25 14L15 10" stroke="#1C5D99" 
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div>
+                    <div class="flex-input">
+                        <input type="radio" id="basic3" name ="radio_custom" class="input-plans">
+                        <div class="plan-items-grid">
+                            <div>
+                                <img src = "images/logo-plans-default.png" height="80px" width="80px" class="plan-logo">
+                                <p class="form-li-options">Básico III</p>
+                                    <div class="flex-li">
+                                        <ul class="list">
+                                            <li class="list-check">
+                                                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M5 11L10 16L18 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                Todos do plano básico II
+                                            </li>
+                                            <li class="list-check">
+                                                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M5 11L10 16L18 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                1 ano de acesso
+                                            </li>
+                                            <li class="list-check">
+                                                <svg class="check" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M5 11L10 16L18 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                10% de desconto
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="plans-price">
+                                        <span class="price">R$ 430,92</span>
+                                        <span class="plans"> /por ano</span>
+                                    </div>
+                                    <div class="flex-check-box">
+                                        <svg class="check-box" height="23" width="23" xmlns="http://www.w3.org/2000/svg">
+                                            <rect xmlns="http://www.w3.org/2000/svg" x="3" y="3" width="18" height="18" rx="4" 
+                                            stroke="#1C5D99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path xmlns="http://www.w3.org/2000/svg" d="M9 12L11.25 14L15 10" stroke="#1C5D99" 
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="btn-free-test">Experimente 7 dias grátis</button>
+            </div>
+        </div>
+        <! --- RECURSOS --- !>
+        <div class="form-resources">
+            <div class="flex-resources">
+                <h4>RECURSOS SÓLIDOS</h4>
+                <h3 class="txt-functionalities">Porque escolher o FluAgenda?</h3>
+                <p class="txt-solid-resources">
+                    FluAgenda simplifique sua rotina, maximize sua produtividade. 
+                    <br>
+                    Gerencie clientes, agendamentos e registros com eficiência e segurança.
+                    <br>
+                    Foque no que importa, nós cuidamos do resto.
+                </p>
+            </div>
+            <div class="grid-resources">
+                <div>
+                    <div class="flex-title-resources">
+                        <img src = "images/security.png" height="20px" width="20px">
+                        <span class="resources-title">Segurança</span>
+                    </div>
+                    <div>
+                        <p class="flex-txt-resources-justify">
+                            A proteção das informações é nossa principal prioridade. Com o Flu Agenda, 
+                            garantimos a segurança e proteção de suas informações e as de seus pacientes através das mais avançadas medidas de segurança.
+                            <br><br>
+                            Utilizamos criptografia para proteger todas as informações e implementamos rigorosos protocolos de acesso 
+                            para assegurar que apenas você tenha acesso aos dados dos pacientes.
+                            <br><br>
+                            Valorizamos sua privacidade e a de seus pacientes profundamente, 
+                            e você pode confiar que suas informações estão seguras conosco no Flu Agenda.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex-title-resources">
+                        <img src = "images/usability.png" height="20px" width="20px">
+                        <span class="resources-title">Usabilidade</span>
+                    </div>
+                    <div>
+                        <p class="flex-txt-resources-justify">
+                            A usabilidade é um dos fundamentos do Flu Agenda. 
+                            Nosso aplicativo foi cuidadosamente desenvolvido para ser intuitivo e simples de usar, 
+                            permitindo que você se concentre no que realmente importa, seu trabalho. 
+                            <br> <br>
+                            Com uma interface amigável, você pode gerenciar suas agendas, pacientes e registros de atendimento de maneira direta e eficiente. 
+                            Não é necessário ser um especialista em tecnologia para aproveitar ao máximo o Flu Agenda. 
+                            <br> <br>
+                            A excelente facilidade de uso do aplicativo garante que você explore todas as suas funcionalidades sem dificuldades.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex-title-resources">
+                        <img src = "images/s.png" height="20px" width="20px">
+                        <span class="resources-title">Stripe</span>
+                    </div>
+                    <div>
+                        <p class="flex-txt-resources-justify">
+                            Optamos pelo Stripe como plataforma de pagamentos para garantir conveniência aos nossos clientes, 
+                            proporcionando uma experiência de pagamento segura e tranquila.
+                            <br> <br>
+                            Seus dados financeiros são protegidos, permitindo que você efetue pagamentos com total confiança. 
+                            Conte conosco para cuidar bem de você e de seus pacientes com o Flu Agenda.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

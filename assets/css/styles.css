@@ -1,10 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    height: 500vh;
+    height: auto;
     /* height: 100%; */
     /* background: linear-gradient(to bottom, #e6f0f1 10%, #cee8ee 30%, #FFFFFF 60%); */
     background: linear-gradient(to bottom, #e6f0f1 10%, #95C6CF 30%, #FFFFFF 60%);
+    background: linear-gradient(to bottom, #C6E4EA 10%, #e6f0f1 44%, #FFFFFF 46%);
+    background: linear-gradient(to bottom, #D8F0F5 10%, #e6f0f1 44%, #FFFFFF 46%);
+    background: linear-gradient(to bottom, #C6E4EA 4%, #D8F0F5 45%, #e6f0f1 51%);
 }
 header {
     position: fixed;
@@ -42,12 +45,16 @@ h4 {
     font-family: 'Lato', sans-serif;
     text-align: center;
     font-size: 1.2em;
+    color: #1C5D99;
+    margin: 0px;
 }
 p {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: rgb(69, 78, 90);
     font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 button {
     font-family: 'Nunito', sans-serif;
@@ -58,6 +65,7 @@ button {
     align-self: center;
     cursor: pointer;
     border-radius: 12px;
+    border: none;
 }
 button:hover {
     background-color: #63A0AB;
@@ -66,12 +74,10 @@ button:hover {
     font-size: 1.3em;
     height: 45px;
     width: 115px;
-    border: none;
 }
 .btn-register {
     height: 32px;
     width: 90px;
-    border: none;
     position: absolute;
 }
 body.scrolled .form-header {
@@ -125,7 +131,7 @@ label {
     width: 220px;
     color: gray;
 }
-input {
+.input-register {
     height: 2.5rem;
     width: 100%;
     font-family: 'Nunito', sans-serif;
@@ -136,7 +142,7 @@ input {
     padding: 0em 0.5em;
     background-color: rgba(206, 206, 206, 0.349);
 }
-input:focus {
+.input-register:focus {
     outline-color:#a9a9a9d0;
     outline-offset: 2px;
     outline-style: dashed;
@@ -147,7 +153,7 @@ input:focus {
 ::placeholder {
     color: rgba(169, 169, 169, 0.815);
 }
-.flex-solutions {
+.flex-solutions { 
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -159,11 +165,7 @@ input:focus {
     font-size: 2.5em;
     margin: 0px 30px;
 }
-.txt-solutions {
-    color: #1C5D99;
-    margin: 0px;
-}
-.form-grid {
+.grid-solutions {
     display: grid;
     margin-top: 1em;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
@@ -176,7 +178,7 @@ input:focus {
     color: rgb(69, 78, 90);
     font-size: .875rem;
 }
-.items-grid {
+.solutions-items-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,12 +193,229 @@ input:focus {
     right: 1.25rem;
     bottom: 1.25rem;
 }
+.flex-plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.padding-plans {
+    padding-top: 2em;
+}
+.txt-plans {
+    color: #1f1f1f;
+    font-size: 2em;
+    margin: 0;
+}
+.grid-plans {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: top;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.plan-items-grid {
+    padding: 2rem;
+    border: 2px solid grey;
+    opacity: 0.3;
+    border-radius: 1em;
+    width: 220px;
+    transition: all 0.3s ease;
+    height: 240px;
+}
+.input-plans{ 
+    cursor: pointer;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.input-plans:checked + .plan-items-grid {
+    border: 2px solid #1C5D99;
+    opacity: 1;
+}
+.flex-input {
+    display: flex;
+    position: relative;
+}
+.flex-li {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: rgb(69, 78, 90);
+}
+.form-li-options {
+    margin: 0px;
+    color: #1f1f1f;
+    font-size: 1.1em;
+}
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px;
+}
+.list-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9em;
+}
+.plans-price {
+    padding-top: 1rem;
+    color: rgb(69, 78, 90);
+}
+.price {
+    color: #1f1f1f;
+    font-size: 1.2em;
+}
+.plans{
+    color: rgb(69, 78, 90);
+    font-size: 0.9em;
+}
+.flex-check-box{
+    display: flex;
+    position: absolute;
+    align-self: flex-start;
+    right: 10px;
+    top: 10px;
+}
+.check-box {
+    opacity: 0;
+    fill: none;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+}
+.input-plans:checked + .plan-items-grid .check-box {
+    opacity: 1;
+}
+.check {
+    stroke: #71717A;
+}
+.input-plans:checked + .plan-items-grid .check {
+    stroke: #3F828E;
+    stroke: #3F928E;
+}
+.btn-free-test {
+    font-size: 1em;
+    height: 50px;
+    width: 225px;
+}
+.form-resources {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-resources {
+    display: flex;
+    padding-top: 6rem;
+    margin: 0px 250px 25px 250px;
+    flex-direction: column;
+    align-items: center;
+}
+.grid-resources {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-top: 1rem;
+    gap: 2rem;
+    margin-right: 9rem;
+    margin-left: 8.5rem;
+    margin-bottom: 2.5rem;
+}
+.resources-title {
+    font-size: 1.2rem;
+}
+.flex-title-resources {
+    color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.flex-txt-resources-justify {
+    display: flex;
+    text-align: justify;
+    font-size: 0.9rem;
+    padding: 2px;
+}
+.flex-txt-resources {
+    display: flex;
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 2px;
+}
+.flex-resources-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.txt-conheca-fluagenda {
+    font-family: Inter Variable, sans-serif;
+    color: #1f1f1f;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 2.5rem;    
+}
+.btn-free-test-2 {
+    font-size: 1em;
+    height: 50px;
+    width: 245px;
+}
+
+@media (max-width: 1250px) {
+    .grid-resources {
+        margin: 0;
+    }
+
+    .flex-resources {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}
+
+@media (max-width: 930px) {
+    /* body {
+        height: 480vh;
+    } */
+
+    p {
+        font-size: 1em;
+    }
+
+    .grid-plans {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-items-grid {
+        padding: 2rem;
+        border: 2px solid gray;
+        border-radius: 1em;
+        height: 250px;
+        width: 420px;
+    }
+
+    .flex-resources {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .txt-functionalities {
+        font-size: 2.3em;
+    }
+
+    .grid-resources {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3 repeat(1fr);
+    }
+}
 
 @media (max-width: 768px) {
-    .form-free-test {
-        width: 100%;
-        padding: 0 1em;
-    }
+    /* body {
+        height: 500vh;
+    } */
 
     h4 {
         font-size: 1.2em;
@@ -206,11 +425,16 @@ input:focus {
         font-size: 1.8em;
     }
 
+    .form-free-test {
+        width: 100%;
+        padding: 0 1em;
+    }
+
     .flex-header {
         padding-top: 4px;
     }
 
-    .form-grid {
+    .grid-solutions {
         grid-template-columns: repeat(3, 1fr);
         gap: 0.5rem;
         align-items: baseline;
@@ -219,9 +443,44 @@ input:focus {
     .txt-grid {
         text-align: center;
     }
+
+    .plan-items-grid {
+        padding: 2rem;
+        border: 2px solid gray;
+        border-radius: 1em;
+        height: 230px;
+        width: 360px;
+    }
+
+    .flex-resources {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 650px) {
+    /* body {
+        height: auto;
+    } */
+    
+    p {
+        font-size: 0.9em;
+    }
+
+    .txt-functionalities {
+        font-size: 2em;
+    }
+
+    .flex-txt-resources {
+        font-size: 0.85rem;
+    }
 }
 
 @media (max-width: 500px) {
+    header {
+        text-align: center;
+    }
+
     h1 {
         font-size: 1.5em;
     }
@@ -231,8 +490,8 @@ input:focus {
         margin: 10px;
     }
 
-    header {
-        text-align: center;
+    h4 {
+        font-size: 1em;
     }
 
     .flex-header {
@@ -244,10 +503,30 @@ input:focus {
         width: 80px;
         font-size: 1em;
     }
+    
+    .plan-items-grid {
+        padding: 2rem;
+        border: 2px solid gray;
+        border-radius: 1em;
+        width: 240px;
+    }
+
+    .txt-functionalities {
+        font-size: 1.8em;
+        margin: 0;
+    }
+
+    .resources-title {
+        font-size: 1.1rem;
+    }
+
+    .flex-txt-resources-justify {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 360px) {
-     h3 {
+    h3 {
         font-size: 2em;
         margin: 10px;
     }
@@ -258,5 +537,12 @@ input:focus {
 
     input {
         width: 95%;
+    }
+
+    .plan-items-grid {
+        padding: 2rem;
+        border: 2px solid gray;
+        border-radius: 1em;
+        width: 230px;
     }
 }
